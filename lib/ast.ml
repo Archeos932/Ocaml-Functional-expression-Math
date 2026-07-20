@@ -4,3 +4,6 @@ type expr =
   | Add of expr * expr
   | Mul of expr * expr
   | Pow of expr * int
+  | Sub of expr * expr
+  | Div of expr * expr
+  | Sqrt of expr
