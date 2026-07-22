@@ -15,8 +15,11 @@ open Lib
     (* Calculs avec simplification directe *)
     let f_prime = Simplify.simplify (Derive.derive f "x") in
     let big_f = Simplify.simplify (Primitive.primitive f "x") in
+    let x_val = 5.0 in
+    let eval = Eval.eval big_f x_val in
 
     (* Affichage *)
     Printf.printf "f(x)  = %s\n" (Format.to_string f);
     Printf.printf "f'(x) = %s\n" (Format.to_string f_prime);
-    Printf.printf "F(x)  = %s\n" (Format.to_string big_f)
+    Printf.printf "F(x)  = %s\n" (Format.to_string big_f) ;
+    Printf.printf " evaluation de la primitive en %f = %f " x_val  eval
