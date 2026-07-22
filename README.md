@@ -10,3 +10,6 @@ there a 3 main function :
 - derive ( to derive expressions )
 - primitive ( to find one primitive but it's not work on all expression just basics expressions for now)
 - simplify ( which can simplify a lot of things like 1 * x = x etc etc 
+
+
+2026 | © | Mathis | Student L2 
