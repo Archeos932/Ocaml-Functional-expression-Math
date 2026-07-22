@@ -12,4 +12,27 @@ there a 3 main function :
 - simplify ( which can simplify a lot of things like 1 * x = x etc etc 
 
 
+### Install the build system
+this project uses `dune`to compile the source code. If you don't have yet, install it via opam : 
+
+```bash
+opam install dune
+```
+
+### Build the project
+compile the AST and module
+
+```bash
+dune build
+```
+
+### Run the programme
+
+```bash
+dune exec bin/main.exe
+```
+
+
+
+
 2026 | © | Mathis | Student L2 
